@@ -1,4 +1,4 @@
 neurokit2
-pywt
+PyWavelets
 pyhrv
 streamlit
