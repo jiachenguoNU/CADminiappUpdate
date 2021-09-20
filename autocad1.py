@@ -112,7 +112,7 @@ with col1:
 
 
         
-        st.title('ECG visulization')
+        st.title('ECG visulization (healthy people)')
         pt = st.slider('Scroll to show the imported ECG', 0.0, t[-1]-5, 0.01)
         figecg, ax1 = plt.subplots(figsize=(9,4))
         ax1.plot(t,s)
@@ -125,7 +125,7 @@ with col1:
         
         
         #%% R peaks detection
-        st.title('R-peak detection')
+        st.title('R-peak detection (healthy people)')
         
         signals, info = nk.ecg_peaks(s,sampling_rate=250)
         
@@ -159,7 +159,7 @@ with col1:
         st.pyplot(figecg)        
         st.subheader('Using detected R peaks, heartbeat durations can be calculated')
         #%% heart rate variability
-        st.title('Heart rate variability (HRV)')
+        st.title('Heart rate variability (HRV) for healthy people')
         st.subheader('HRV can be calculated using the equation below:')
         st.latex(r''' 
                  HRV_{i}=\frac{60}{\Delta_{t_{i}}}
@@ -177,7 +177,7 @@ with col1:
         plt.xlim(pt,pt+100)
         st.pyplot(fighrv)
         #%% time domain features
-        st.title('Features from time domain')
+        st.title('Features from time domain (healthy people)')
         st.subheader('Mean heartbeat duration:') 
         st.latex(r'''
                             \bar{\Delta}_{t}=\frac{1}{n}\sum_{j=1}^{n} \Delta_{t_{i}} 
@@ -208,7 +208,7 @@ with col1:
             st.write(ftframe)
     
     #%% freq-domain features
-        st.title('Features from frequency domain')
+        st.title('Features from frequency domain (healthy people)')
         st.subheader('Total power: detect abnormal autonomic activity')
         st.subheader('Low-freq (LF) (0.04~0.15Hz) power: detect sympathetic modulation')
         st.subheader('High-freq (HF) (0.15~0.4Hz) power: detect parasympathetic modulation')
@@ -232,7 +232,7 @@ with col1:
             st.write(ffframe)   
     
     #%% time-freq features
-        st.title('Features from time-frequency domain')
+        st.title('Features from time-frequency domain (healthy people)')
         st.subheader('Discrete wavelet transform of HRV into 4 coefficients: D1~D3, A3')
         st.subheader('Shannon entropy: measure data uncertainty and variability')
         st.subheader('Approximation entropy: quantify data regularity and unpredictability')
@@ -288,7 +288,7 @@ with col1:
             st.write(fwframe)
         
         #%%Classification
-        st.title('Classification using support vector machine (SVM)') 
+        st.title('Classification using support vector machine (SVM) (healthy people)') 
         
         scaler = joblib.load('data_scaler.pkl') 
         X = scaler.transform(feature)
