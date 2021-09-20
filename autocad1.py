@@ -428,7 +428,7 @@ with col3:
         st.markdown('')
         #%% heart rate variability
         st.title('Heart rate variability for CAD patients')
-        st.title('')
+
         st.header('')
         a2=dur[0]
         a2=a2[1:-1] # duration of each different heart beat the 1st element is removed since it's 0
