@@ -384,7 +384,6 @@ with col3:
 
         
         st.title("ECG visulization (CAD patients)")
-        st.header("")
         pt = st.slider('Scroll to show the imported ECG', 0.0, t[-1]-5, 0.01)
         figecg, ax1 = plt.subplots(figsize=(9,4))
         ax1.plot(t,s)
@@ -396,7 +395,6 @@ with col3:
         
         #%% R peaks detection
         st.title("R-peak detection (CAD patients)")
-        st.header("")
         
         signals, info = nk.ecg_peaks(s,sampling_rate=250)
         
@@ -424,6 +422,7 @@ with col3:
         plt.title('R peak detection', fontsize=16)
         plt.xlabel('Time (s)', fontsize=14)
         plt.ylabel('Voltage (mV)', fontsize=14)
+        st.header('')
         st.pyplot(figecg)
         #%% heart rate variability
         st.title('Heart rate variability for CAD patients')
