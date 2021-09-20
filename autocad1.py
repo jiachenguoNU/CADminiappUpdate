@@ -68,7 +68,7 @@ st.subheader('Made by Jiachen Guo and Ashwin Vazhayil')
 
 st.title('What are CAD and ECG?')
 st.header('')
-image = Image.open('background.PNG')
+image = Image.open('background.jpg')
 st.image(image,width=1300)
 st.header('')
 
