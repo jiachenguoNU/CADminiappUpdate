@@ -158,8 +158,13 @@ with col1:
         plt.ylabel('Voltage (mV)', fontsize=14)
         st.pyplot(figecg)        
         st.subheader('Using detected R peaks, heartbeat durations can be calculated')
+        
+        
         #%% heart rate variability
+        
         st.title('Heart rate variability (HRV) for healthy people')
+        
+        
         st.subheader('HRV can be calculated using the equation below:')
         st.latex(r''' 
                  HRV_{i}=\frac{60}{\Delta_{t_{i}}}
@@ -288,7 +293,7 @@ with col1:
             st.write(fwframe)
         
         #%%Classification
-        st.title('Classification using support vector machine (SVM) (healthy people)') 
+        st.title('Classification using support vector machine (SVM) for healthy people') 
         
         scaler = joblib.load('data_scaler.pkl') 
         X = scaler.transform(feature)
@@ -378,7 +383,7 @@ with col3:
 
 
         
-        st.title("")
+        st.title("ECG visulization (CAD patients)")
         st.header("")
         pt = st.slider('Scroll to show the imported ECG', 0.0, t[-1]-5, 0.01)
         figecg, ax1 = plt.subplots(figsize=(9,4))
@@ -390,7 +395,7 @@ with col3:
         st.pyplot(figecg)
         
         #%% R peaks detection
-        st.title("")
+        st.title("R-peak detection (CAD patients)")
         st.header("")
         
         signals, info = nk.ecg_peaks(s,sampling_rate=250)
@@ -421,12 +426,13 @@ with col3:
         plt.ylabel('Voltage (mV)', fontsize=14)
         st.pyplot(figecg)
         #%% heart rate variability
+        st.title('Heart rate variability for CAD patients')
         st.title('')
         st.header('')
         a2=dur[0]
         a2=a2[1:-1] # duration of each different heart beat the 1st element is removed since it's 0
         hrv2=60/a2 #calculate heart rate variability
-        st.title('')
+        
         st.title('')  
         st.title('')      
         st.title('') 
@@ -445,7 +451,7 @@ with col3:
 
 
         #%% time-domain features
-        st.title('Features from time domain')
+        st.title('Features from time domain (CAD patients)')
         st.title('')
         st.title('')
         st.title('')
@@ -473,7 +479,7 @@ with col3:
             st.write(ftframe)
     
     #%% freq-domain features
-        st.title('Features from frequency domain')
+        st.title('Features from frequency domain (CAD patients)')
         st.header('')
         st.header('')
         st.header('')
@@ -499,7 +505,7 @@ with col3:
             st.write(ffframe)   
     
     #%% time-freq features
-        st.title('Features from time-frequency domain')
+        st.title('Features from time-frequency domain (CAD patients)')
         st.header('')
         st.header('')
         st.header('')
@@ -556,7 +562,7 @@ with col3:
             st.markdown('Features extracted from the time-frequency domain are summarized below:')
             st.write(fwframe)
         #%%Classification
-        st.title('Classification using support vector machine (SVM)') 
+        st.title('Classification using support vector machine (SVM) for CAD patients') 
         
         scaler = joblib.load('data_scaler.pkl') 
         X = scaler.transform(feature)
