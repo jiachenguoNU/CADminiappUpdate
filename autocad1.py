@@ -422,8 +422,10 @@ with col3:
         plt.title('R peak detection', fontsize=16)
         plt.xlabel('Time (s)', fontsize=14)
         plt.ylabel('Voltage (mV)', fontsize=14)
-        st.header('')
+
         st.pyplot(figecg)
+        st.header('')
+        st.subheader('')
         #%% heart rate variability
         st.title('Heart rate variability for CAD patients')
         st.title('')
