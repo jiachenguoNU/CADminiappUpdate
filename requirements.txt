@@ -1,4 +1,3 @@
 neurokit2
 pyhrv
 streamlit
-pywt
