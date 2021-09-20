@@ -479,7 +479,7 @@ with col3:
         st.header('')
         st.header('')
         st.header('')
-        st.header('')
+        st.subheader('')
         st.markdown('')
         freq_all=pyhrv.frequency_domain.welch_psd(nni=a2*1000,show_param=False,figsize=(9,4))
         ptotal=freq_all['fft_total']/1000**2 #total power
