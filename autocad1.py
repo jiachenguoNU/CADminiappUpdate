@@ -425,7 +425,7 @@ with col3:
 
         st.pyplot(figecg)
         st.header('')
-
+        st.markdown('')
         #%% heart rate variability
         st.title('Heart rate variability for CAD patients')
         st.title('')
