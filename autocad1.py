@@ -169,7 +169,7 @@ with col1:
         
         st.subheader('HRV can be calculated using the equation below:')
         st.latex(r''' 
-                 HRV_{i}=\frac{60}{\Delta_{t_{i}}}
+                 HRV_{i}=\frac{60}{\Delta_{t_{R_i}}}
                             ''')
         a1=dur[0]
         a1=a1[1:-1] # duration of each different heart beat the 1st element is removed since it's 0
@@ -188,15 +188,15 @@ with col1:
         st.title('Features from time domain (healthy people)')
         st.subheader('Mean heartbeat duration:') 
         st.latex(r'''
-                            \bar{\Delta}_{t}=\frac{1}{n}\sum_{j=1}^{n} \Delta_{t_{i}} 
+                            \bar{\Delta}_{t_R}=\frac{1}{n}\sum_{i=1}^{n} \Delta_{t_{R_i}} 
                             ''')
         st.subheader('Standard deviation of heartbeat duration (SD):')
         st.latex(r'''
-                            S D=\sqrt{\frac{1}{n-1} \sum_{j=1}^{n}\left(\Delta_{t_{j}}-\overline{\Delta}_t\right)^{2}}  
+                            S D=\sqrt{\frac{1}{n-1} \sum_{i=1}^{n}\left(\Delta_{t_{R_i}}-\overline{\Delta}_{t_R}\right)^{2}}  
                             ''')
         st.subheader('Standard deviation of successive differences (SDSD):')
         st.latex(r'''
-                             S D S D=\sqrt{\frac{1}{n-1} \sum_{j=1}^{n}\left(\Delta\left(\Delta_{t_{j}}\right)-\overline{\Delta\left(\Delta_{t}\right)}\right)^{2}}  
+                             S D S D=\sqrt{\frac{1}{n-1} \sum_{i=1}^{n}\left(\Delta\left(\Delta_{t_{R_i}}\right)-\overline{\Delta\left(\Delta_{t_R}\right)}\right)^{2}}  
                             ''')          
         
         
