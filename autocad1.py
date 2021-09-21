@@ -498,7 +498,6 @@ with col3:
     #%% freq-domain features
         st.title('Features from frequency domain (CAD patients)')
         st.title('')
-        st.markdown('')
         st.header('')
         st.header('')
         st.header('')
