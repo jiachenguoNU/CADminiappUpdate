@@ -71,7 +71,7 @@ st.header('')
 image = Image.open('background.jpg')
 st.image(image,width=1300)
 
-st.markdown("![Alt Text](https://github.com/jiachenguoNU/CADminiappUpdate/blob/main/ECG.gif)")
+st.markdown("![Alt Text](https://drive.google.com/file/d/1t0kCYR0ueILlz2JaNPddFHxqGdR1fxUf/view?usp=sharing)")
 
 st.header('')
 
