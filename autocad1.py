@@ -75,7 +75,7 @@ st.image("https://drive.google.com/uc?export=download&id=1t0kCYR0ueILlz2JaNPddFH
 st.markdown('[1] www.alilamedicalmedia.com')
 st.header('')
 image = Image.open('outline.jpg')
-st.image(image,width=600)
+st.image(image,width=1300)
 st.markdown('Download ECG sample file 1 for healthy people: https://drive.google.com/uc?export=download&id=1FrCRrY3xPd2rxknkPMdQNw1DN4_lPdyJ')
 st.markdown('Download ECG sample file 2 for healthy people: https://drive.google.com/uc?export=download&id=1cG95GGSrZ1EjoxLmehWyJfhkhOTfWbNV')
 st.markdown('Download ECG sample file 1 for CAD patient: https://drive.google.com/uc?export=download&id=1vDrn7pyexfAaC4Pmu3P6ZbcI3Hed1akI')
