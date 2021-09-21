@@ -221,6 +221,7 @@ with col1:
     
     #%% freq-domain features
         st.title('Features from frequency domain (healthy people)')
+        st.subheader('''Power distribution in the freq domain reveals how heart rate is controlled by the nervous system''')
         st.subheader('Total power: detect abnormal autonomic activity')
         st.subheader('Low-freq (LF) (0.04~0.15Hz) power: detect sympathetic modulation')
         st.subheader('High-freq (HF) (0.15~0.4Hz) power: detect parasympathetic modulation')
@@ -496,6 +497,7 @@ with col3:
         st.text('')
     #%% freq-domain features
         st.title('Features from frequency domain (CAD patients)')
+        st.title('')
         st.header('')
         st.header('')
         st.header('')
