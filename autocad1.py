@@ -71,7 +71,7 @@ st.header('')
 image = Image.open('background.jpg')
 st.image(image,width=1300)
 
-st.markdown("![Alt Text](https://drive.google.com/file/d/1t0kCYR0ueILlz2JaNPddFHxqGdR1fxUf/view?usp=sharing)")
+st.image("https://drive.google.com/uc?export=download&id=1t0kCYR0ueILlz2JaNPddFHxqGdR1fxUf")
 
 st.header('')
 
