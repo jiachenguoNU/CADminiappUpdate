@@ -182,7 +182,7 @@ with col1:
         plt.xlabel('Sample',fontsize=14)
         plt.ylabel('Heart rate (bpm)', fontsize=14)
         plt.xlim(pt,pt+100)
-        plt.ylim(30,200)
+        plt.ylim(40,170)
         st.pyplot(fighrv)
         #%% time domain features
         st.title('Features from time domain (healthy people)')
@@ -254,7 +254,7 @@ with col1:
         figwave, axwave = plt.subplots(nrows=4, ncols=1, figsize=(9,4))
         plt.subplot(5,1,1)
         plt.plot(hrv1)
-        plt.ylim(30,200)
+        plt.ylim(40,170)
         plt.ylabel('HR/bpm',fontsize=12)
         plt.title('Wavelet decomposition',fontsize=16)
         plt.subplot(5,1,2)
@@ -454,7 +454,7 @@ with col3:
         plt.xlabel('Sample',fontsize=14)
         plt.ylabel('Heart rate (bpm)', fontsize=14)
         plt.xlim(pt,pt+100)
-        plt.ylim(30,200)
+        plt.ylim(40,170)
         st.pyplot(fighrv)    
         
         
@@ -533,7 +533,7 @@ with col3:
         figwave, axwave = plt.subplots(nrows=4, ncols=1, figsize=(9,4))
         plt.subplot(5,1,1)
         plt.plot(hrv2)
-        plt.ylim(30,200)
+        plt.ylim(40,170)
         plt.ylabel('HR/bpm',fontsize=12)
         plt.title('Wavelet decomposition',fontsize=16)
         plt.subplot(5,1,2)
