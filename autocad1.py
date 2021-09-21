@@ -521,7 +521,6 @@ with col3:
             featuref=np.reshape(featuref,(1,-1))
             ffframe=pd.DataFrame(featuref,columns=['Total power','Low-frequency power','High-frequency power','LF/HF'])
             st.write(ffframe)   
-        st.markdown('')
     #%% time-freq features
         st.title('Features from time-frequency domain (CAD patients)')
         st.header('')
