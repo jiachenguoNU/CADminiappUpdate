@@ -72,7 +72,7 @@ image = Image.open('background.jpg')
 st.image(image,width=1300)
 
 st.image("https://drive.google.com/uc?export=download&id=1t0kCYR0ueILlz2JaNPddFHxqGdR1fxUf")
-
+st.markdown('[1] www.alilamedicalmedia.com')
 st.header('')
 
 st.markdown('Download ECG sample file 1 for healthy people: https://drive.google.com/uc?export=download&id=1FrCRrY3xPd2rxknkPMdQNw1DN4_lPdyJ')
