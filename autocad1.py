@@ -70,6 +70,10 @@ st.title('What are CAD and ECG?')
 st.header('')
 image = Image.open('background.jpg')
 st.image(image,width=1300)
+
+gif = Image.open('ECG.gif')
+st.image(gif,width=500)
+
 st.header('')
 
 st.markdown('Download ECG sample file 1 for healthy people: https://drive.google.com/uc?export=download&id=1FrCRrY3xPd2rxknkPMdQNw1DN4_lPdyJ')
