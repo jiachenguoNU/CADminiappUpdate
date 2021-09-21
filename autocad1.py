@@ -489,7 +489,7 @@ with col3:
             featuret=np.reshape(timeHealth,(1,-1))
             ftframe=pd.DataFrame(featuret,columns=['Mean','SD','SDSD'])
             st.write(ftframe)
-    
+        st.subheader('')
     #%% freq-domain features
         st.title('Features from frequency domain (CAD patients)')
         st.header('')
