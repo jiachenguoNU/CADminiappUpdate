@@ -159,7 +159,7 @@ with col1:
 
         
         
-        plt.title('R peak detection', fontsize=16)
+        plt.title('R peak detection for healthy people', fontsize=16)
         plt.xlabel('Time (s)', fontsize=14)
         plt.ylabel('Voltage (mV)', fontsize=14)
         st.pyplot(figecg)        
@@ -182,7 +182,7 @@ with col1:
         pt = st.slider('Scroll to show derived HRV', 0, len(hrv1)-100, 0)       
         fighrv, axhrv = plt.subplots(figsize=(9,4))
         plt.plot(np.arange(0,len(hrv1)),hrv1)
-        plt.title('Heart rate variability', fontsize=16)
+        plt.title('HRV for healthy people', fontsize=16)
         plt.xlabel('Sample',fontsize=14)
         plt.ylabel('Heart rate (bpm)', fontsize=14)
         plt.xlim(pt,pt+100)
@@ -434,7 +434,7 @@ with col3:
 
         
         
-        plt.title('R peak detection', fontsize=16)
+        plt.title('R peak detection for CAD patients', fontsize=16)
         plt.xlabel('Time (s)', fontsize=14)
         plt.ylabel('Voltage (mV)', fontsize=14)
 
@@ -455,7 +455,7 @@ with col3:
         pt = st.slider('Scroll to show derived HRV', 0, len(hrv2)-100, 0)       
         fighrv, axhrv = plt.subplots(figsize=(9,4))
         plt.plot(np.arange(0,len(hrv2)),hrv2)
-        plt.title('Heart rate variability', fontsize=16)
+        plt.title('HRV for CAD patients', fontsize=16)
         plt.xlabel('Sample',fontsize=14)
         plt.ylabel('Heart rate (bpm)', fontsize=14)
         plt.xlim(pt,pt+100)
