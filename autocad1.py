@@ -293,6 +293,9 @@ with col1:
                                     ,nk.entropy_sample(cd2)
                                     ,nk.entropy_sample(cd1)]
     
+        timeHealth=np.reshape(timeHealth,(1, -1))
+        freqHealth=np.reshape(freqHealth,(1, -1))
+        waveHealth=np.reshape(waveHealth,(1, -1))
         feature=np.hstack((timeHealth,freqHealth,waveHealth))
         feature=np.reshape(feature,(1, -1))
         featurew=np.hstack(waveHealth)
