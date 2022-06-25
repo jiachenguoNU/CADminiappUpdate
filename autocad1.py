@@ -298,13 +298,7 @@ with col1:
         waveHealth=np.reshape(waveHealth,(1, -1))
         feature=np.hstack((timeHealth,freqHealth,waveHealth))
         feature=np.reshape(feature,(1, -1))
-        fwframe=pd.DataFrame(waveHealth,columns=['Shannon entropy_CD3','Shannon entropy_CD2','Shannon entropy_CD1','Shannon entropy_CA3'
-                                                                    ,'Approximate entropy_CD3','Approximate entropy_CD2','Approximate entropy_CD1','Approximate entropy_CA3'
-                                                                    ,'Sampling entropy_CD3','Sampling entropy_CD2','Sampling entropy_CD1','Sampling entropy_CA3'])
-        
-        if st.button('Show extracted time-frequency-domain features for healthy people'):
-            st.markdown('Features extracted from the time-frequency domain are summarized below:')
-            st.write(fwframe)
+
         
         #%%Classification
         st.title('Classification using support vector machine (SVM) for healthy people') 
